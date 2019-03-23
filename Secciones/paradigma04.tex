@@ -1,3 +1,33 @@
+
+\section{Paradigma No 01 – Programación Imperativa} 
+
+\begin{enumerate}[1.]
+	\item La Programación Imperativa  es una paradigma de programación imperativa al lenguaje de programación como tiene que realizar cada uno de los pasos. Le decimos que variables usar, que bucles y sentencias etc. Es decir, construimos un algoritmo muy concreto para solventar un problema\\
+\textbf{Nociones Básicas:}
+\item Variable con estado (valor modificable)
+\item Secuencia de cambios de estado
+\item Procedimientos 
+\textbf{Características Destacables:}
+\item Se fija completamente el orden en el que se deben realizar las operaciones con ayuda de unos patrones de control del flujo de ejecución (secuencia, alternativa y ciclo) que sirven para construir el esqueleto de las rutinas.
+
+\item Se pueden fijar puntos de observación en el texto de una rutina y considerar los valores de las variables (estado) cuando el flujo de ejecución pasa por dichos puntos. Estos valores pueden cambiar de un punto a otro y en el mismo punto en momentos distintos de la ejecución. 
+
+
+\textbf{Estructuras Cíclicas de Control:}
+La mayoría de lenguajes de programación imperativos tienen estructuras cíclicas de control tales como while, do..while, for y loop para iterar sobre un determinado bloque de códigos dada una condición o expresión, mientras que la gran mayoría de lenguajes declarativos, especialmente los funcionales (subparadigma declarativo), carecen de este tipo de estructuras cíclicas, de hecho la única forma de representar un flujo cíclico es a través de la recursión (funciones que se llaman a sí misma) o través de funciones de alto nivel tales como map y reduce (que internamente usan recursión).
+
+\textbf{Procedimiento:}
+\item Secuencia de actuaciones sobre el estado de ciertas variables para alcanzar unos valores que cumplan unas determinadas condiciones. Tienen nombre y parámetros (de entrada y de salida).
+\item Los procedimientos colaboran pasando valores de los parámetros de salida de unos a los parámetros de entrada de otros.
+
+\textbf{Estructura de Datos:}
+\item Datos predefinidos (v. lógicos, números, caracteres)
+\item Esquemas de array, de registro y variables dinámicas
+
+	
+
+\end{enumerate}
+
 \section{Paradigma No 02 – Programación Orientada a Objetos} 
 
 \begin{enumerate}[1.]
@@ -153,15 +183,96 @@ La programación lógica es un paradigma que se encuentra dentro del paradigma d
 Paradigma de programación basado en la lógica de primer orden. La Programación Lógica estudia el uso de la lógica para el planteamiento de problemas y el control sobre las reglas de inferencia para alcanzar la solución automática.
 La Programación Lógica, junto con la funcional, forma parte de lo que se conoce como Programación Declarativa, es decir la programación consiste en indicar como resolver un problema mediante sentencias, en la Programación Lógica, se trabaja en una forma descriptiva, estableciendo relaciones entre entidades, indicando no como, sino que hacer, entonces se dice que la idea esencial de la Programación Lógica es
 
+\begin{center}
+\includegraphics[width=14cm]{./Imagenes/img02} 
+\end{center}
+
+Asume que partimos de un conjunto de hechos y reglas conocidos. Solamente es la declaración del componente lógico de un algoritmo. El sistema desarrolla el componente de control de secuencia. En este paradigma, la evaluación asume que cuando se selecciona una regla, es porque ésta es la única posibilidad o la necesaria para resolver el problema. Es decir, se encuentra una solución si un conjunto de reglas adecuado y las sustituciones a dichas reglas producen un conjunto de reglas aterrizadas (sin variables libres), suficientes para deducir el resultado de los hechos conocidos.
+La programación lógica intenta resolver lo siguiente:
+Dado un problema S, saber si la afirmación A es solución o no del problema o en que casos lo es. Además queremos que los métodos sean implantados en maquinas de forma que la resolución del problema se haga de forma automática
+La programación lógica: construye base de conocimientos mediante reglas y hechos.
+
+\textbf{Características}\\
+\begin {itemize}
+\item Los programas para los lenguajes de programación lógicos son un conjunto de hechos y reglas.
+\item La sintaxis de los lenguajes de programación lógicos es notablemente diferente de los lenguajes de programación imperativos.
+\item Unificación de términos.
+\item Mecanismos de inferencia automática.
+\item Recursión como estructura de control básica.
+\item Visión lógica de la computación.
+\item La aplicación de las reglas de la lógica para inferir conclusiones a partir de datos.
+\item El programa se transforma en un conjunto de declaraciones formales de especificaciones que deben ser correctas por definición.
+\item No tiene un algoritmo que indique los pasos que detallen la manera de llegar a un resultado.
+\item Las salidas son funcionalmente dependientes de las entradas.
+
+\textbf{Ventajas y Desventajas del uso de este paradigma}
+\textbf{Ventajas}
+\item Puede mejorarse la eficiencia modificando el componente de control sin tener que modificar la lógica del algoritmo.
+\item Relaciones multipropósito.
+\item Simplicidad.
+\item Generación rápida de prototipos e ideas complejas.
+\item Sencillez en la implementación de estructuras complejas.
+\item Potencia.
+
+\textbf{Desventajas}
+\item Altamente ineficiente.
+\item Pocas áreas de aplicación
+\item No existen herramientas de depuración efectivas.
+\item En problemas reales, es poco utilizado.
+\item Si el programa no contiene suficiente información para contestar una consulta responde false.	
+
+\end{enumerate}
+
+\section{Paradigma No 04 – Programación Funcional} 
+
+\begin{enumerate}[1.]
+	\item La Programación Funcional  es una forma en la cual podemos resolver diferentes problemáticas ya que estaremos trabajando principalmente con funciones, evitaremos los datos mutables, así como el hecho de compartir estados entre funciones.
+	
+\begin{center}
+\includegraphics[width=14cm]{./Imagenes/img04} 
+\end{center}
+
+	\\Las funciones serán tratadas como ciudadanos de primera clase. Las funciones podrán ser asignadas a variables además podrán ser utilizadas como entrada y salida de otras funciones.
+	
+\emph{Ejemplo:}
+
+De forma tradicional imperativa tendríamos que especificar “como” lo haremos
+\begin{center}
+\includegraphics[width=14cm]{./Imagenes/img05} 
+\end{center}
+
+Pero de forma declarativa o programación funcional tendríamos: 
+
+\begin{center}
+\includegraphics[width=14cm]{./Imagenes/img06} 
+\end{center}
+ 
+\end{enumerate}
+
+\section{Paradigma No 05 – Principios de Diseño de Base de Datos} 
+
+\begin{enumerate}[1.]
+	\item Uno de los pasos cruciales en la construcción de una aplicación que maneje una base de datos, es sin duda, el diseño de la base de datos. Si las tablas no son definidas apropiadamente, podemos tener muchos dolores de cabeza al momento de ejecutar consultas a la base de datos para tratar de obtener algún tipo de información.
+	\\No importa si nuestra base de datos tiene sólo 20 registros, o algunos cuantos miles, es importante asegurarnos que nuestra base de datos está correctamente diseñada para que tenga eficiencia y usabilidad a lo largo del tiempo.
+
+\\En este artículo, se mencionarán algunos principios básicos del diseño de base de datos y se tratarán algunas reglas que se deben seguir cuando se crean bases de datos. Dependiendo de los requerimientos de la base de datos, el diseño puede ser algo complejo, pero con algunas reglas simples que tengamos en la cabeza será mucho más fácil crear una base de datos perfecta para nuestro siguiente proyecto.
+
+\\Construir grandes aplicaciones en MySQL resulta fácil con herramientas como Apache, Perl, PHP, y Python. Asegurarse de que son rápidas, sin embargo, requiere algo más que perspicacia. MySQL tiene una bien merecida reputación de ser un servidor de bases de datos muy rápido que también es muy fácil de configurar y usar, además de que en los últimos años su popularidad ha crecido notablemente debido a que se utiliza en infinidad de sitios web que requieren hacer uso de una base de datos. Sin embargo, pocos usuarios sabemos algo más que crear una base de datos y escribir algunas búsquedas contra ella.
+
+\\Después de leer este artículo debemos ser capaces de entender algunas técnicas que nos ayudarán a diseñar bases de datos MySQL para construir mejores aplicaciones. Vamos a suponer que se tiene un conocimiento básico del lenguaje SQL, y de MySQL, pero no vamos a asumir que se tiene mucha experiencia en alguno de los dos.
 	
 
 \end{enumerate}
 
-\section{Paradigma No 04 – Programacion Funcional} 
+\section{CONCLUSIONES} 
 
 \begin{enumerate}[1.]
-	\item La Programacion Funcional  es una forma en la cual podemos resolver diferentes problemáticas ya que estaremos trabajando principalmente con funciones, evitaremos los datos mutables, así como el hecho de compartir estados entre funciones.
-	\\Las funciones serán tratadas como ciudadanos de primera clase. Las funciones podrán ser asignadas a variables además podrán ser utilizadas como entrada y salida de otras funciones.
+	\item La programación funcional nos permitirá desarrollar software mucho más legible y fácil de testear, nos concentramos en qué estamos haciendo y no en cómo.
+	\\Aunque a primera vista pueda parecer que este tipo de programación está muy limitada a resolver puzzles y cosas por el estilo, lo cierto es que (teóricamente) puedes realizar cualquier tipo de programa con ellos.
+
+Aun así, lo lógico (valga la redundacia) es utilizar programación lógica en las áreas en que más sentido tiene: inteligencia artificial, sistemas expertos, procesamiento de lenguajes, etc.
+
+El poder utilizar este paradigma a través de librerías hace sea mucho más atractivo, porque hace que sea más sencillo usarlo sólo en aquellas partes del problema que tiene sentido.
 	
 
 \end{enumerate}
